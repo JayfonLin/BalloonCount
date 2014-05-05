@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JAYFON</Machine>
+    <WindowsUser>Lin</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</PackageIdentityName>
+    <RegisteredManifestChecksum>6865F65A23673DE62B240C511BE4924CAC930867DDF6264F8FC87DB48E80F4C2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_1.0.0.0_neutral__n9crjymffsrjr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_n9crjymffsrjr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Lin</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-05T07:11:32.615</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\Balloon.exe">
+      <PackagePath>Balloon.exe</PackagePath>
+      <Modified>2014-05-05T07:11:30.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-24T16:00:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-05-05T02:44:28.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-05-05T07:02:34.193</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\Scenario1.xbf">
+      <PackagePath>Scenario1.xbf</PackagePath>
+      <Modified>2014-05-05T07:02:34.194</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-05-05T07:11:31.123</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

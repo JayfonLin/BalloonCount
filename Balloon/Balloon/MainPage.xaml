@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Balloon.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Balloon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1356">
+                    <AppBarButton Icon="Home" Label="主页" Click="Home_Click" />
+                    <AppBarButton Icon="Like" Label="喜欢" />
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+    
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="82" Margin="430,91,0,0" TextWrapping="Wrap" Text="气球倒数" VerticalAlignment="Top" Width="457" FontSize="72" TextAlignment="Center" Foreground="#FF22720B"/>
+        <Ellipse Width="200" Height="300" StrokeThickness="2" Stroke="#FFA1BF60" Fill="#FF1BB8A9" Margin="549,238,617,230"/>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <AppBarButton Icon="Add" Label="添加" Click="Next_Click_1"/>
+                    <AppBarButton Icon="Edit"  Label="编辑"/>
+                    <AppBarButton Icon="Save"  Label="保存"  />
+                    <AppBarButton Icon="Delete" Label="删除" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <AppBarButton Icon="Back" Label="返回" IsEnabled="False" />
+                    <AppBarButton Icon="Forward" Label="下一页" Click="Next_Click_1"  />
+                    <AppBarButton Icon="Help" Label="帮助" />
+                </StackPanel>
+            </Grid>
+            
+        </AppBar>
+    </Page.BottomAppBar>
+</Page>
