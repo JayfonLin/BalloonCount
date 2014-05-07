@@ -23,7 +23,7 @@
   <Applications>
     <Application Id="App" Executable="Balloon.exe" EntryPoint="Balloon.App">
       <m2:VisualElements DisplayName="Balloon" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Balloon" ForegroundText="light" BackgroundColor="#464646">
-        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:SplashScreen Image="Assets\logo.jpg" BackgroundColor="#2F3E55" />
       </m2:VisualElements>
     </Application>
   </Applications>
