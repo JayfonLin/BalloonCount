@@ -13,6 +13,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.DataTransfer;
+using Windows.Media.Capture;
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.Storage;
+using System.Threading.Tasks;
+using Windows.Storage.Streams;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -25,6 +30,7 @@ namespace Balloon
     public sealed partial class Scenario1 : Page
     {
         DataTransferManager dtm;
+        StorageFile photo;
         public Scenario1()
         {
             this.InitializeComponent();
@@ -35,8 +41,7 @@ namespace Balloon
         {
             base.OnNavigatedTo(e);
             dtm= DataTransferManager.GetForCurrentView();
-            //创建event handler
-            dtm.DataRequested+= dtm_DataRequested;
+            
         }
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
@@ -61,9 +66,8 @@ namespace Balloon
             textSource += "   ";
             textSource += "内容：";
             textSource += source;
-
             data.SetText(textSource);
-           
+            data.SetBitmap(RandomAccessStreamReference.CreateFromFile(photo));
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
@@ -77,8 +81,34 @@ namespace Balloon
 
         protected void ShowUIButton_Click(object sender, RoutedEventArgs e)
         {
+            //创建event handler
+            dtm.DataRequested += dtm_DataRequested;
             // If the user clicks the share button, invoke the share flow programatically.
             DataTransferManager.ShowShareUI();
+        }
+
+        private async void OnCapturePhoto(object sender, RoutedEventArgs e)
+        {
+            var camera = new CameraCaptureUI();
+            var file = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
+            photo = file;
+            if (photo != null)
+            {
+                ImageSource imagesource = ImageFromFile(photo).Result;
+                MyPhoto.Source = imagesource;
+            }
+            CameraButton.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            MyPhoto.Visibility = Windows.UI.Xaml.Visibility.Visible;
+        }
+
+        static async Task<ImageSource> ImageFromFile(StorageFile file)
+        {
+            var bitmapImage = new BitmapImage();
+            var stream = await file.OpenReadAsync();
+            {
+                bitmapImage.SetSource(stream);
+                return bitmapImage;
+            }
         }
     }
 }

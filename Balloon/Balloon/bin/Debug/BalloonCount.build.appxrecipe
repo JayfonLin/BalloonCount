@@ -8,41 +8,44 @@
     <PackageIdentityName>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\Balloon.exe">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Balloon.exe">
       <PackagePath>Balloon.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
+      <PackagePath>Assets\logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\Scenario1.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Scenario1.xbf">
       <PackagePath>Scenario1.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\documents\visual studio 2013\Projects\Balloon\Balloon\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -29,6 +29,10 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="videosLibrary" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />

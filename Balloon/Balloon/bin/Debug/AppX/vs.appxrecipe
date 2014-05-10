@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DEEP-20130912VT</Machine>
-    <WindowsUser>Administrator</WindowsUser>
+    <Machine>JAYFON</Machine>
+    <WindowsUser>Lin</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</PackageIdentityName>
-    <RegisteredManifestChecksum>00C23453B5984673B39A919EEA84CAF8EC75DF96228E7C0DDD8163B90DC6EEF7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E9C07F8E6485280C491B6824EFAF6B2CF60856CBD93DE6B968C5724685080465</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_1.0.0.0_neutral__n9crjymffsrjr</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_n9crjymffsrjr!App</RegisteredUserModeAppID>
     <RegisteredPackageID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</RegisteredPackageID>
@@ -14,56 +14,56 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-07T01:58:35.705</Modified>
+      <Modified>2014-05-10T07:01:46.874</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Balloon.exe">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Balloon.exe">
       <PackagePath>Balloon.exe</PackagePath>
-      <Modified>2014-05-07T01:58:34.993</Modified>
+      <Modified>2014-05-10T07:01:44.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
       <PackagePath>Assets\logo.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-07T01:58:23.779</Modified>
+      <Modified>2014-05-10T02:30:25.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-07T01:05:00.136</Modified>
+      <Modified>2013-09-24T16:00:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-07T01:05:00.151</Modified>
+      <Modified>2013-09-24T16:00:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <Modified>2014-05-07T01:05:00.155</Modified>
+      <Modified>2013-09-24T16:00:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-07T01:05:00.158</Modified>
+      <Modified>2013-09-24T16:00:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-05-07T01:05:00.495</Modified>
+      <Modified>2014-05-10T02:55:57.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-05-07T01:05:00.527</Modified>
+      <Modified>2014-05-10T02:55:57.787</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Scenario1.xbf">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Scenario1.xbf">
       <PackagePath>Scenario1.xbf</PackagePath>
-      <Modified>2014-05-07T01:05:00.591</Modified>
+      <Modified>2014-05-10T06:10:18.748</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-07T01:58:35.434</Modified>
+      <Modified>2014-05-10T07:01:46.458</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
