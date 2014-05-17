@@ -55,7 +55,7 @@
                     Height="61" Width="116" RenderTransformOrigin="0.259,0.262" FontSize="24" Click="OnCapturePhoto" Visibility="Visible"/>
             <Image x:Name="MyPhoto" Source="Assets/logo.jpg" HorizontalAlignment="Left" Height="174"  Grid.Row="5"  Grid.Column="2"
                    VerticalAlignment="Top" Width="400" Visibility="Collapsed"/>
-            <Button Content="确定" Click="Back_Button_Click" Grid.Row="6" Grid.Column="2"
+            <Button Content="确定" Click="SureButton_Click" Grid.Row="6" Grid.Column="2"
                     VerticalAlignment="Top" FontSize="24" Margin="190,13,0,0" Height="50" Width="82" />
             <Button Content="取消" Click="Back_Button_Click" HorizontalAlignment="Right" Grid.Row="6" Grid.Column="2"
                     VerticalAlignment="Top" FontSize="22" Margin="0,13,14,0" Height="48" Width="78" />

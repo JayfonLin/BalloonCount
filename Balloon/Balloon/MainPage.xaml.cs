@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+using SQLite;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -25,6 +18,14 @@ namespace Balloon
         public MainPage()
         {
             this.InitializeComponent();
+            MySQLiteHelper.createDB();
+            //init();
+        }
+
+        protected override void OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            init();
         }
         private void Next_Click_1(object sender, RoutedEventArgs e)
         {
@@ -34,6 +35,50 @@ namespace Balloon
         private void Home_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void init() {
+            MyListView.ItemsSource = Sort(SelectAll());
+        }
+
+        private ObservableCollection<ActivityListViewItem> Sort(ObservableCollection<ActivityListViewItem> list)
+        {
+            var values1 = from l in list
+                         where l.Date >= 0
+                         orderby l.Date ascending
+                         select l;
+            var values2 = from l in list
+                          where l.Date < 0
+                          orderby l.Date descending
+                          select l;
+            //values1.Concat(values2);
+            ObservableCollection<ActivityListViewItem> result = new ObservableCollection<ActivityListViewItem>();
+            foreach (ActivityListViewItem a in values1) {
+                result.Add(a);
+            }
+            foreach (ActivityListViewItem a in values2)
+            {
+                result.Add(a);
+            }
+            return result;
+        }
+
+        private ObservableCollection<ActivityListViewItem> SelectAll()
+        {
+            ObservableCollection<ActivityListViewItem> list = new ObservableCollection<ActivityListViewItem>();
+            using (var db = MySQLiteHelper.CreateSQLiteConnection())
+            {
+                List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+                foreach (ActivityInfo mem in query)
+                {
+                    ActivityInfo ai = mem;
+                    ActivityListViewItem info = new ActivityListViewItem() {
+                        Theme=ai.Theme, Date=(int)(ai.Date-DateTime.Now.Date).TotalDays };
+                    list.Add(info);
+                }
+                db.Close();
+            }
+            return list;
         }
     }
 }

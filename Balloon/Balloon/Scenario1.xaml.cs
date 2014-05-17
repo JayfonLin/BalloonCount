@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.Storage;
 using System.Threading.Tasks;
 using Windows.Storage.Streams;
+using SQLite;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -100,6 +101,27 @@ namespace Balloon
             CameraButton.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             MyPhoto.Visibility = Windows.UI.Xaml.Visibility.Visible;
         }
+
+        private void SureButton_Click(object sender, RoutedEventArgs e) {
+            if (Title.Text != string.Empty)
+            {
+                ActivityInfo activityInfo = new ActivityInfo();
+                activityInfo.Date = MyDate.Date.Date;
+                activityInfo.Theme = Title.Text;
+                activityInfo.Content = TextSource.Text;
+                //activityInfo.Picture = MyPhoto.
+                SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
+                db.Insert(activityInfo);
+                db.Close();
+                Frame.Navigate(typeof(MainPage));
+            }
+            else
+            {
+                //TxtMessage.Text = "请输入国家名称及金牌总数";
+            }
+        }
+
+        
 
         static async Task<ImageSource> ImageFromFile(StorageFile file)
         {

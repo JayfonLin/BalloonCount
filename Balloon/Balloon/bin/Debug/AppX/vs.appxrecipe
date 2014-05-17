@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-10T07:01:46.874</Modified>
+      <Modified>2014-05-13T16:11:29.821</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Balloon.exe">
       <PackagePath>Balloon.exe</PackagePath>
-      <Modified>2014-05-10T07:01:44.968</Modified>
+      <Modified>2014-05-13T16:15:36.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
       <PackagePath>Assets\logo.jpg</PackagePath>
@@ -51,19 +51,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-05-10T02:55:57.786</Modified>
+      <Modified>2014-05-10T07:11:43.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-05-10T02:55:57.787</Modified>
+      <Modified>2014-05-13T16:14:30.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\Scenario1.xbf">
       <PackagePath>Scenario1.xbf</PackagePath>
-      <Modified>2014-05-10T06:10:18.748</Modified>
+      <Modified>2014-05-10T07:11:43.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-10T07:01:46.458</Modified>
+      <Modified>2014-05-13T16:11:28.412</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

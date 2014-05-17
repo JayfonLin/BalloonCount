@@ -20,11 +20,31 @@
             </Grid>
         </AppBar>
     </Page.TopAppBar>
-    
+
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black"/>
-        <TextBlock HorizontalAlignment="Left" Height="82" Margin="430,91,0,0" TextWrapping="Wrap" Text="气球倒数" VerticalAlignment="Top" Width="457" FontSize="72" TextAlignment="Center" Foreground="#FF22720B"/>
-        <Ellipse Width="200" Height="300" StrokeThickness="2" Stroke="#FFA1BF60" Fill="#FF1BB8A9" Margin="549,238,617,230"/>
+        <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black">
+
+            <ListView FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="474,0,0,0" Width="491">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="200">
+                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="200" Height="200" Fill="CadetBlue"/>
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="163"
+                        HorizontalAlignment="Center" Canvas.Left="17" Canvas.Top="65" Canvas.ZIndex="1">
+
+                                <TextBlock x:Name="Activity"  Height="40" Text="{Binding Theme}" FontSize="24" HorizontalAlignment="Center"/>
+                                <Grid HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <TextBlock x:Name="MyDay" Height="40" Text="{Binding Date}" FontSize="24" HorizontalAlignment="Center"/>
+                                        <TextBlock Height="40" Text="天" FontSize="24" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </Canvas>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Frame>
     </Grid>
 
     <Page.BottomAppBar>
@@ -32,7 +52,7 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="50*"/>
-                    
+
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                     <AppBarButton Icon="Add" Label="添加" Click="Next_Click_1"/>
@@ -46,7 +66,7 @@
                     <AppBarButton Icon="Help" Label="帮助" />
                 </StackPanel>
             </Grid>
-            
+
         </AppBar>
     </Page.BottomAppBar>
 </Page>
