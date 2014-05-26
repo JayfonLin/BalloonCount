@@ -124,6 +124,9 @@
     <Compile Include="Scenario1.xaml.cs">
       <DependentUpon>Scenario1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario2.xaml.cs">
+      <DependentUpon>Scenario2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
   </ItemGroup>
@@ -135,6 +138,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\buttonLogo.jpg" />
     <Content Include="Assets\logo.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
@@ -151,6 +155,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Scenario1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

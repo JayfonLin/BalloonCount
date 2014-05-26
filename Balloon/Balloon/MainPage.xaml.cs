@@ -69,16 +69,55 @@ namespace Balloon
             using (var db = MySQLiteHelper.CreateSQLiteConnection())
             {
                 List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+                
                 foreach (ActivityInfo mem in query)
                 {
                     ActivityInfo ai = mem;
-                    ActivityListViewItem info = new ActivityListViewItem() {
-                        Theme=ai.Theme, Date=(int)(ai.Date-DateTime.Now.Date).TotalDays };
-                    list.Add(info);
+                    
+                    //删除已过期的日子
+                    if ((int)(ai.Date - DateTime.Now.Date).TotalDays < 0)
+                    {
+                        db.Delete(mem);
+                    }
+                    else
+                    {
+                        ActivityListViewItem info = new ActivityListViewItem()
+                        {
+                            Theme = ai.Theme,
+                            Date = (int)(ai.Date - DateTime.Now.Date).TotalDays
+                        };
+                        list.Add(info);
+                    }
+                
                 }
                 db.Close();
             }
             return list;
         }
+
+        private void newButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Scenario1));
+        }
+
+        private void deleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO
+            if (MyListView.SelectedItems.Count > 0)
+            {
+
+                MyListView.Items.RemoveAt(MyListView.SelectedIndex);
+                
+            }
+        }
+
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Scenario2));
+        }
+
+
+
+
     }
 }

@@ -22,33 +22,10 @@
     </Page.TopAppBar>
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-        
-            
-        
         <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black">
-            
-            <ListView FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="541,168,0,174" Width="228">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="200">
-                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="200" Height="200" Fill="CadetBlue"/>
-                            <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="163"
-                        HorizontalAlignment="Center" Canvas.Left="17" Canvas.Top="65" Canvas.ZIndex="1">
 
-                            <TextBlock x:Name="Activity"  Height="40" Text="{Binding Theme}" FontSize="24" HorizontalAlignment="Center"/>
-                            <Grid HorizontalAlignment="Center">
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <TextBlock x:Name="MyDay" Height="40" Text="{Binding Date}" FontSize="24" HorizontalAlignment="Center"/>
-                                    <TextBlock Height="40" Text="天" FontSize="24" HorizontalAlignment="Center"/>
-                                </StackPanel>
-                            </Grid>
-                        </StackPanel>
-                        </Canvas>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Frame> 
+            <Canvas x:Name="balloonCanvas" HorizontalAlignment="Left" Height="558" Margin="88,86,0,0" VerticalAlignment="Top" Width="912"/>
+        </Frame>
     </Grid>
 
     <Page.BottomAppBar>
