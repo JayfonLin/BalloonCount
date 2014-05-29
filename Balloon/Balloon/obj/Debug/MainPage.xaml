@@ -21,20 +21,14 @@
         </AppBar>
     </Page.TopAppBar>
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-        
-            
-        
-        <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black">
-            
-            <ListView FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="541,168,0,174" Width="228">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="200">
-                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="200" Height="200" Fill="CadetBlue"/>
-                            <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="163"
-                        HorizontalAlignment="Center" Canvas.Left="17" Canvas.Top="65" Canvas.ZIndex="1">
+    <Grid Background="{ThemeResource AppBarItemForegroundThemeBrush}">
+        <ListView FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="150,0,0,0" Width="491" BorderBrush="#FF230618" Background="#FF65B5C1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="200">
+                        <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="200" Height="200" Fill="CadetBlue"/>
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="163"
+    						HorizontalAlignment="Center" Canvas.Left="17" Canvas.Top="65" Canvas.ZIndex="1">
 
                             <TextBlock x:Name="Activity"  Height="40" Text="{Binding Theme}" FontSize="24" HorizontalAlignment="Center"/>
                             <Grid HorizontalAlignment="Center">
@@ -44,11 +38,26 @@
                                 </StackPanel>
                             </Grid>
                         </StackPanel>
-                        </Canvas>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Frame> 
+                    </Canvas>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:ConnectionId='0' x:Name="newButton" Content="新建" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1133,64,0,0" Height="132" Width="142" BorderBrush="Transparent" Foreground="Black"                        >
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/buttonLogo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:ConnectionId='0' x:Name="deleteButton" Content="删除" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1133,260,0,0" Height="132" Width="142" BorderBrush="Transparent" Foreground="Black"                           >
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/buttonLogo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:ConnectionId='0' x:Name="editButton" Content="编辑" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1133,460,0,0" Height="132" Width="142" BorderBrush="Transparent" Foreground="Black"                          >
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/buttonLogo.jpg"/>
+            </Button.Background>
+        </Button>
+        <Canvas x:Name="balloonCanvas" HorizontalAlignment="Left" Height="250" Margin="760,174,0,0" VerticalAlignment="Top" Width="308"/>
     </Grid>
 
     <Page.BottomAppBar>

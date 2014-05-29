@@ -5,6 +5,9 @@ using Windows.UI.Xaml.Controls;
 using SQLite;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Windows.UI.Xaml.Shapes;
+using Windows.UI.Xaml.Media;
+using Windows.UI;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -19,17 +22,12 @@ namespace Balloon
         {
             this.InitializeComponent();
             MySQLiteHelper.createDB();
-            //init();
         }
 
         protected override void OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             init();
-        }
-        private void Next_Click_1(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Scenario1));
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -39,6 +37,7 @@ namespace Balloon
 
         private void init() {
             MyListView.ItemsSource = Sort(SelectAll());
+            TopDate.ItemsSource = SelectTop();
         }
 
         private ObservableCollection<ActivityListViewItem> Sort(ObservableCollection<ActivityListViewItem> list)
@@ -63,22 +62,120 @@ namespace Balloon
             return result;
         }
 
+        private ObservableCollection<ActivityListViewItem> SelectTop()
+        {
+            ObservableCollection<ActivityListViewItem> list = new ObservableCollection<ActivityListViewItem>();
+            using (var db = MySQLiteHelper.CreateSQLiteConnection())
+            {
+                List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+
+                if (query.Count == 0)
+                {
+                    return list;
+                }
+                ActivityInfo nearest = (ActivityInfo)query[0];
+                foreach (ActivityInfo mem in query)
+                {
+                    ActivityInfo ai = mem;
+
+                    if (ai.isTop == true)
+                    {
+                        ActivityListViewItem info = new ActivityListViewItem()
+                        {
+                            ID = ai.ID,
+                            Theme = ai.Theme,
+                            Date = (int)(ai.Date - DateTime.Now.Date).TotalDays
+                        };
+                        list.Add(info);
+                        db.Close();
+                        return list;
+                    }
+                    else
+                    {
+                        //选取不过期，但最近的日子
+                        if ((int)(ai.Date - DateTime.Now.Date).TotalDays > 0 && (int)(ai.Date - nearest.Date).TotalDays < 0)
+                            nearest = ai;
+                    }
+
+                }
+
+                ActivityListViewItem near = new ActivityListViewItem()
+                {
+                    ID = nearest.ID,
+                    Theme = nearest.Theme,
+                    Date = (int)(nearest.Date - DateTime.Now.Date).TotalDays
+                };
+                list.Add(near);
+                db.Close();
+                return list;
+                
+            }
+        }
+
         private ObservableCollection<ActivityListViewItem> SelectAll()
         {
             ObservableCollection<ActivityListViewItem> list = new ObservableCollection<ActivityListViewItem>();
             using (var db = MySQLiteHelper.CreateSQLiteConnection())
             {
                 List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+                
                 foreach (ActivityInfo mem in query)
                 {
                     ActivityInfo ai = mem;
-                    ActivityListViewItem info = new ActivityListViewItem() {
-                        Theme=ai.Theme, Date=(int)(ai.Date-DateTime.Now.Date).TotalDays };
-                    list.Add(info);
+                    
+                    //删除已过期的日子
+                    if ((int)(ai.Date - DateTime.Now.Date).TotalDays < 0)
+                    {
+                        db.Delete(mem);
+                    }
+                    else
+                    {
+                        ActivityListViewItem info = new ActivityListViewItem()
+                        {
+                            ID = ai.ID,
+                            Theme = ai.Theme,
+                            Date = (int)(ai.Date - DateTime.Now.Date).TotalDays
+                        };
+                        list.Add(info);
+                    }
+                
                 }
                 db.Close();
             }
             return list;
         }
+
+        private void newButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Scenario1));
+        }
+
+        private void deleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyListView.SelectedItems.Count > 0)
+            {
+                ActivityListViewItem temp = new ActivityListViewItem();
+                temp = (ActivityListViewItem)MyListView.SelectedItems[0];
+                var db = MySQLiteHelper.CreateSQLiteConnection();
+                db.Delete<ActivityInfo>(temp.ID);
+                init();
+            }
+        }
+
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyListView.SelectedItems.Count > 0)
+            {
+                ActivityListViewItem temp = new ActivityListViewItem();
+                temp = (ActivityListViewItem)MyListView.SelectedItems[0];  
+                Frame.Navigate(typeof(Scenario2), temp.ID);
+            }
+        }
+
+        private void dateCalculateButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DateCalculatePage));
+        }
+
     }
 }

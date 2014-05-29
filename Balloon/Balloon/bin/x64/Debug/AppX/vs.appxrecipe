@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>JAYFON</Machine>
-    <WindowsUser>Lin</WindowsUser>
+    <Machine>DEEP-20130912VT</Machine>
+    <WindowsUser>Administrator</WindowsUser>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</PackageIdentityName>
@@ -14,60 +14,60 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-17T03:25:07.405</Modified>
+      <Modified>2014-05-25T09:43:44.286</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\Balloon.exe">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\Balloon.exe">
       <PackagePath>Balloon.exe</PackagePath>
-      <Modified>2014-05-17T15:42:29.822</Modified>
+      <Modified>2014-05-25T09:53:18.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.4.3\Redist\Debug\x64\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
-      <Modified>2014-05-16T08:51:39.892</Modified>
+      <Modified>2014-05-19T01:37:10.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
       <PackagePath>Assets\logo.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-10T02:30:25.088</Modified>
+      <Modified>2014-05-25T09:35:07.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-24T16:00:42.000</Modified>
+      <Modified>2014-05-25T09:35:07.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-24T16:00:42.000</Modified>
+      <Modified>2014-05-25T09:35:07.504</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <Modified>2013-09-24T16:00:42.000</Modified>
+      <Modified>2014-05-25T09:35:07.509</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-24T16:00:42.000</Modified>
+      <Modified>2014-05-25T09:35:07.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-05-17T03:24:58.303</Modified>
+      <Modified>2014-05-25T09:35:08.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-05-17T14:38:33.548</Modified>
+      <Modified>2014-05-25T09:53:17.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\Scenario1.xbf">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\Scenario1.xbf">
       <PackagePath>Scenario1.xbf</PackagePath>
-      <Modified>2014-05-17T04:24:26.668</Modified>
+      <Modified>2014-05-25T09:35:08.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-17T03:25:06.115</Modified>
+      <Modified>2014-05-25T09:43:43.145</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

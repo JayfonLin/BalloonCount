@@ -70,3 +70,5 @@ C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\qualifiers.
 C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\ProjectArchitectures.txt
+C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\Balloon.exe
+C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\Debug\Balloon.pdb
