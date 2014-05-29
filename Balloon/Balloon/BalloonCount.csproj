@@ -116,6 +116,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DateCalculatePage.xaml.cs">
+      <DependentUpon>DateCalculatePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -139,17 +142,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\buttonLogo.jpg" />
+    <Content Include="Assets\DateCalcute.PNG" />
+    <Content Include="Assets\Delete.PNG" />
+    <Content Include="Assets\Edit.PNG" />
     <Content Include="Assets\logo.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\New.PNG" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Title.PNG" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DateCalculatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

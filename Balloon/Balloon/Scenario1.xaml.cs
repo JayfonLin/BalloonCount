@@ -103,22 +103,30 @@ namespace Balloon
         }
 
         private void SureButton_Click(object sender, RoutedEventArgs e) {
-            if (Title.Text != string.Empty)
-            {
                 ActivityInfo activityInfo = new ActivityInfo();
                 activityInfo.Date = MyDate.Date.Date;
+
+                activityInfo.isTop = (bool)isTopSwitch.IsOn;
+                if (Title.Text == String.Empty) Title.Text = "某天";
                 activityInfo.Theme = Title.Text;
+                
                 activityInfo.Content = TextSource.Text;
                 //activityInfo.Picture = MyPhoto.
                 SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
+
+                //如果出现置顶，将其他置顶设为false
+                if ((bool)isTopSwitch.IsOn == true)
+                {
+                    List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+                    foreach (ActivityInfo mem in query)
+                    {
+                        mem.isTop = false;
+                        db.Update(mem);
+                    }
+                }
                 db.Insert(activityInfo);
                 db.Close();
                 Frame.Navigate(typeof(MainPage));
-            }
-            else
-            {
-                //TxtMessage.Text = "请输入国家名称及金牌总数";
-            }
         }
 
         

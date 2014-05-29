@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="Balloon.Scenario1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Balloon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1356">
+                    <AppBarButton x:ConnectionId='1' Icon="Home" Label="主页"                    />
+                    <AppBarButton Icon="Like" Label="喜欢" />
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Grid Background="#FFD8AE20">
+
+        <Grid VerticalAlignment="Top"  HorizontalAlignment="Center" Margin="412,31,404,0" Height="700">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="74"/>
+                <RowDefinition Height="84"/>
+                <RowDefinition Height="178"/>
+                <RowDefinition Height="174"/>
+                <RowDefinition Height="96"/>
+                <RowDefinition Height="93"/>
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="72" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="1" Margin="31,0,131,0" Width="288">添加事件</TextBlock>
+            <TextBlock FontSize="48" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="2" Grid.Column="0" Height="58" Margin="0,8">时间</TextBlock>
+            <DatePicker HorizontalAlignment="Left" x:Name="MyDate" Grid.Row="2" Grid.Column="2" Height="32" Margin="0,22,0,20" Width="295"/>
+            <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Text="主题" Foreground="White" FontSize="48"
+                       Grid.Row="3" Grid.Column="0" Height="58" Margin="0,13"/>
+            <TextBox x:Name="Title" HorizontalAlignment="Left" TextWrapping="Wrap" Text="五一劳动节" 
+                     Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"  FontSize="24" Height="52" Width="390" Margin="0,16"/>
+            <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Text="内容" Foreground="White" FontSize="48"
+                       Grid.Row="4" Grid.Column="0" Height="58" Margin="0,60"/>
+            <TextBox x:Name="TextSource" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Text="今天不是五一劳动节" 
+                     Grid.Row="4" Grid.Column="2" FontSize="24" Height="162" Width="390" Margin="0,8"/>
+            <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Text="图片" Foreground="White" FontSize="48"
+                       Grid.Row="5" Grid.Column="0" Height="58" Margin="0,60"/>
+            <Button x:ConnectionId='2' Content="拍一张" x:Name="CameraButton" Grid.Column="2" HorizontalAlignment="Left" Margin="134,58,0,0" Grid.Row="5" VerticalAlignment="Top" 
+                    Height="61" Width="116" RenderTransformOrigin="0.259,0.262" FontSize="24"                        Visibility="Visible"/>
+            <Image x:Name="MyPhoto" Source="Assets/logo.jpg" HorizontalAlignment="Left" Height="174"  Grid.Row="5"  Grid.Column="2"
+                   VerticalAlignment="Top" Width="400" Visibility="Collapsed"/>
+            <Button x:ConnectionId='3' Content="确定"                          Grid.Row="6" Grid.Column="2"
+                    VerticalAlignment="Top" FontSize="24" Margin="190,13,0,0" Height="50" Width="82" />
+            <Button x:ConnectionId='4' Content="取消"                           HorizontalAlignment="Right" Grid.Row="6" Grid.Column="2"
+                    VerticalAlignment="Top" FontSize="22" Margin="0,13,14,0" Height="48" Width="78" />
+
+        </Grid>
+
+
+
+
+
+
+    </Grid>
+
+    <Page.BottomAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <AppBarButton Icon="Edit"  Label="编辑"  />
+                    <AppBarButton Icon="Save"  Label="保存"  />
+                    <AppBarButton Icon="Delete" Label="删除" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <AppBarButton x:ConnectionId='5' Icon="Favorite"  Label="分享"                            />
+                    <AppBarButton Icon="Back" Label="返回" />
+                    <AppBarButton Icon="Forward" Label="下一页" IsEnabled="False" />
+                    <AppBarButton Icon="Help" Label="帮助" />
+                </StackPanel>
+            </Grid>
+
+        </AppBar>
+    </Page.BottomAppBar>
+
+</Page>
+

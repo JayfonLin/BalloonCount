@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-05-25T12:15:23.604</Modified>
+      <Modified>2014-05-29T08:45:50.366</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Balloon.exe">
       <PackagePath>Balloon.exe</PackagePath>
-      <Modified>2014-05-26T00:40:24.511</Modified>
+      <Modified>2014-05-29T08:47:01.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.4.3\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -38,10 +38,26 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-05-25T09:35:07.511</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\DateCalcute.PNG">
+      <PackagePath>Assets\DateCalcute.PNG</PackagePath>
+      <Modified>2014-05-29T08:44:54.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Delete.PNG">
+      <PackagePath>Assets\Delete.PNG</PackagePath>
+      <Modified>2014-05-29T08:39:35.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Edit.PNG">
+      <PackagePath>Assets\Edit.PNG</PackagePath>
+      <Modified>2014-05-29T08:38:03.104</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-05-25T09:35:07.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\New.PNG">
+      <PackagePath>Assets\New.PNG</PackagePath>
+      <Modified>2014-05-29T08:32:12.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
@@ -57,25 +73,33 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-05-25T09:35:07.510</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Title.PNG">
+      <PackagePath>Assets\Title.PNG</PackagePath>
+      <Modified>2014-05-29T08:14:00.577</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-05-25T09:54:35.930</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\DateCalculatePage.xbf">
+      <PackagePath>DateCalculatePage.xbf</PackagePath>
+      <Modified>2014-05-29T08:45:49.497</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-05-25T12:17:10.181</Modified>
+      <Modified>2014-05-29T08:47:00.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario1.xbf">
       <PackagePath>Scenario1.xbf</PackagePath>
-      <Modified>2014-05-25T09:54:35.931</Modified>
+      <Modified>2014-05-29T08:45:49.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario2.xbf">
       <PackagePath>Scenario2.xbf</PackagePath>
-      <Modified>2014-05-25T12:17:10.181</Modified>
+      <Modified>2014-05-29T08:45:49.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-05-25T12:15:23.387</Modified>
+      <Modified>2014-05-29T08:45:50.240</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,8 @@ namespace Balloon
 {
     public class ActivityListViewItem : INotifyPropertyChanged
     {
+        public int ID { set; get; }
+        public bool isTop { set; get; }
         public event PropertyChangedEventHandler PropertyChanged;
         private String theme;
         public String Theme {

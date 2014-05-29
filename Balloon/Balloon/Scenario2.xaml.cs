@@ -31,6 +31,7 @@ namespace Balloon
     {
         DataTransferManager dtm;
         StorageFile photo;
+        private int ID;
         public Scenario2()
         {
             this.InitializeComponent();
@@ -39,9 +40,23 @@ namespace Balloon
         //进入时注册DataRequested事件
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedTo(e);
+            ID = (int)e.Parameter;
             dtm = DataTransferManager.GetForCurrentView();
+            SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
 
+            //初始化界面设置
+            List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+            foreach (ActivityInfo mem in query)
+            {
+                if (mem.ID == ID)
+                {
+                    Title.Text = mem.Theme;
+                    TextSource.Text = mem.Content;
+                    MyDate.Date = mem.Date;
+                    isTopSwitch.IsOn = mem.isTop;
+                }
+            }
+            db.Close();
         }
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
@@ -103,22 +118,35 @@ namespace Balloon
 
         private void SureButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Title.Text != string.Empty)
+            SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
+            List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+            //如果出现置顶，将其他置顶设为false
+            if ((bool)isTopSwitch.IsOn == true)
             {
-                ActivityInfo activityInfo = new ActivityInfo();
-                activityInfo.Date = MyDate.Date.Date;
-                activityInfo.Theme = Title.Text;
-                activityInfo.Content = TextSource.Text;
-                //activityInfo.Picture = MyPhoto.
-                SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
-                db.Insert(activityInfo);
-                db.Close();
-                Frame.Navigate(typeof(MainPage));
+                foreach (ActivityInfo mem in query)
+                {
+                    mem.isTop = false;
+                    db.Update(mem);
+                }
             }
-            else
+            foreach (ActivityInfo mem in query)
             {
-                //TxtMessage.Text = "请输入国家名称及金牌总数";
+                if (mem.ID == ID)
+                {
+                    mem.Date = MyDate.Date.Date;
+                    mem.isTop = (bool)isTopSwitch.IsOn;
+                    if (Title.Text == String.Empty) Title.Text = "某天";
+                    mem.Theme = Title.Text;
+                    mem.Content = TextSource.Text;
+                    db.Update(mem);
+                }
             }
+
+
+
+            
+            db.Close();
+            Frame.Navigate(typeof(MainPage));
         }
 
 
