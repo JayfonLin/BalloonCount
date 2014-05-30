@@ -38,13 +38,13 @@
                 <RowDefinition Height="96"/>
                 <RowDefinition Height="93"/>
             </Grid.RowDefinitions>
-            <TextBlock FontSize="72" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="1" Margin="31,0,131,0" Width="288">添加事件</TextBlock>
+            <TextBlock FontSize="72" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="1" Margin="31,0,131,0" Width="288">添加活动</TextBlock>
             <TextBlock FontSize="48" VerticalAlignment="Center" TextWrapping="Wrap" Grid.Row="2" Grid.Column="0" Height="58" Margin="0,8">时间</TextBlock>
             <DatePicker HorizontalAlignment="Left" x:Name="MyDate" Grid.Row="2" Grid.Column="2" Height="32" Margin="0,22,0,20" Width="295"/>
             <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Text="主题" Foreground="White" FontSize="48"
                        Grid.Row="3" Grid.Column="0" Height="58" Margin="0,13"/>
             <TextBox x:Name="Title" HorizontalAlignment="Left" TextWrapping="Wrap" Text="五一劳动节" 
-                     Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"  FontSize="24" Height="52" Width="390" Margin="0,16"/>
+                     Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"  FontSize="24" Height="52" Width="390" Margin="0,16" MaxLength="1"/>
             <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" Text="内容" Foreground="White" FontSize="48"
                        Grid.Row="4" Grid.Column="0" Height="58" Margin="0,60"/>
             <TextBox x:Name="TextSource" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Text="今天不是五一劳动节" 

@@ -15,30 +15,33 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1356">
                     <AppBarButton Icon="Home" Label="主页" Click="Home_Click" />
-                    <AppBarButton Icon="Like" Label="喜欢" />
+                    <AppBarButton Icon="Like" Label="喜欢" IsEnabled="False" />
                 </StackPanel>
             </Grid>
         </AppBar>
     </Page.TopAppBar>
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        
         <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black">
 
-            <ListView FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="474,0,0,0" Width="491">
+            <ListView HorizontalContentAlignment="Stretch" FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="474,0,0,0" Width="491">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="200">
-                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="200" Height="200" Fill="CadetBlue"/>
-                            <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="163"
-                        HorizontalAlignment="Center" Canvas.Left="17" Canvas.Top="65" Canvas.ZIndex="1">
+                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="{Binding Radius}">
+                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="{Binding Radius}" Height="{Binding Radius}" Fill="{Binding Fill}"/>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="{Binding Radius}" Canvas.ZIndex="1">
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center"  Width="{Binding Radius}"
+                            HorizontalAlignment="Center" Canvas.ZIndex="1">
 
-                                <TextBlock x:Name="Activity"  Height="40" Text="{Binding Theme}" FontSize="24" HorizontalAlignment="Center"/>
-                                <Grid HorizontalAlignment="Center">
-                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                        <TextBlock x:Name="MyDay" Height="40" Text="{Binding Date}" FontSize="24" HorizontalAlignment="Center"/>
-                                        <TextBlock Height="40" Text="天" FontSize="24" HorizontalAlignment="Center"/>
-                                    </StackPanel>
-                                </Grid>
+                                    <TextBlock x:Name="Activity" Text="{Binding Theme}" Width="{Binding TextblockWidth}" FontSize="{Binding FontSize}" HorizontalAlignment="Center" TextAlignment="Center" MaxLines="2" TextTrimming="WordEllipsis" LineStackingStrategy="MaxHeight" TextLineBounds="TrimToCapHeight" TextWrapping="WrapWholeWords"/>
+                                    <Grid HorizontalAlignment="Center">
+                                        <StackPanel Margin="0,5,0,5" Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <TextBlock x:Name="MyDay" Text="{Binding Date}" FontSize="{Binding FontSize}" HorizontalAlignment="Center"/>
+                                            <TextBlock Text="天" FontSize="{Binding FontSize}" HorizontalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </StackPanel>
                             </StackPanel>
                         </Canvas>
                     </DataTemplate>
@@ -56,14 +59,14 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                     <AppBarButton Icon="Add" Label="添加" Click="Next_Click_1"/>
-                    <AppBarButton Icon="Edit"  Label="编辑"/>
-                    <AppBarButton Icon="Save"  Label="保存"  />
-                    <AppBarButton Icon="Delete" Label="删除" />
+                    <AppBarButton Icon="Edit"  Label="编辑" IsEnabled="False"/>
+                    <AppBarButton Icon="Save"  Label="保存" IsEnabled="False" />
+                    <AppBarButton Icon="Delete" Label="删除" IsEnabled="False"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <AppBarButton Icon="Back" Label="返回" IsEnabled="False" />
                     <AppBarButton Icon="Forward" Label="下一页" Click="Next_Click_1"  />
-                    <AppBarButton Icon="Help" Label="帮助" />
+                    <AppBarButton Icon="Help" Label="帮助" IsEnabled="False" />
                 </StackPanel>
             </Grid>
 

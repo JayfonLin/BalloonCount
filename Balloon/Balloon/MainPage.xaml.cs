@@ -5,6 +5,7 @@ using Windows.UI.Xaml.Controls;
 using SQLite;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Windows.UI;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -20,6 +21,7 @@ namespace Balloon
             this.InitializeComponent();
             MySQLiteHelper.createDB();
             //init();
+            
         }
 
         protected override void OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs e)
@@ -72,8 +74,7 @@ namespace Balloon
                 foreach (ActivityInfo mem in query)
                 {
                     ActivityInfo ai = mem;
-                    ActivityListViewItem info = new ActivityListViewItem() {
-                        Theme=ai.Theme, Date=(int)(ai.Date-DateTime.Now.Date).TotalDays };
+                    ActivityListViewItem info = new ActivityListViewItem(ai.Theme, (int)(ai.Date - DateTime.Now.Date).TotalDays);
                     list.Add(info);
                 }
                 db.Close();
