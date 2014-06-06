@@ -6,48 +6,95 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.TopAppBar>
-        <AppBar>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50*"/>
 
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1356">
-                    <AppBarButton Icon="Home" Label="主页" Click="Home_Click" />
-                    <AppBarButton Icon="Like" Label="喜欢" IsEnabled="False" />
-                </StackPanel>
-            </Grid>
-        </AppBar>
-    </Page.TopAppBar>
+    <Grid Background="#FF80CDE3">
+        <GridView x:Name="MyListView"
+            AutomationProperties.AutomationId="ItemsGridView"
+            AutomationProperties.Name="Items"
+            TabIndex="1"
+            Padding="0,136,116,0"
+            IsSwipeEnabled="false" Margin="622,0,0,96">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        
-        <Frame x:Name="rootFrame" Background="#FFF3F3F3" BorderBrush="Black">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="#FFB6D675" Width="250" Height="250">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,0,10">
+                            <TextBlock Text="{Binding Theme}"
+                                FontSize="40"  Margin="10,20,0,0" 
+                                MaxLines="1"
+                                TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                HorizontalAlignment="Left"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,10">
+                                <TextBlock Text="{Binding Date}" 
+                                    FontSize="72" Margin="10,0,0,0" 
+                                  TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Bottom"/>
+                                <TextBlock Text="天将到来" 
+                                  FontSize="24" Margin="10,0,0,12" 
+                                    TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Bottom"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
 
-            <ListView HorizontalContentAlignment="Stretch" FontSize="25" x:Name="MyListView" HorizontalAlignment="Left" Margin="474,0,0,0" Width="491">
-                <ListView.ItemTemplate>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" x:Name="buttonListView" HorizontalAlignment="Left" Height="630" Margin="0,138,0,0" VerticalAlignment="Top" Width="179" Grid.Column="1" >
+                <Button x:Name="newButton"  Height="79" Width="159" Click="newButton_Click" Margin="0,0,0,0" FontSize="20" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                    <Image Source="Assets/New.PNG" Stretch="UniformToFill"/>
+                </Button>
+                <Button x:Name="editButton" Height="79" Width="159" Margin="0,10,0,0" FontSize="20" Click="editButton_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                    <Image Source="Assets/Edit.PNG" Stretch="UniformToFill"/>
+                </Button>
+
+                <Button x:Name="deleteButton" Height="79" Width="159"  Click="deleteButton_Click" Margin="0,10,0,0" FontSize="20" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                    <Image Source="Assets/Delete.PNG" Stretch="UniformToFill"/>
+                </Button>
+                <Button x:Name="dateCalculateButton" Height="79" Width="186" Margin="0,10,-7,0" FontSize="20" Click="dateCalculateButton_Click" BorderBrush="{x:Null}">
+                    <Image Source="Assets/DateCalcute.PNG" Stretch="Fill" Width="149"/>
+                </Button>
+            </StackPanel>
+
+            <GridView x:Name="TopDate" Grid.Column="1" HorizontalAlignment="Left" Height="526" Margin="184,138,0,0" VerticalAlignment="Top" Width="306" 
+                      AutomationProperties.AutomationId="ItemsGridView"
+                      AutomationProperties.Name="Items"
+                      IsEnabled="False">
+                <GridView.ItemTemplate>
                     <DataTemplate>
-                        <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" Height="{Binding Radius}">
-                            <Ellipse x:Name="MyEllipse" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0" Width="{Binding Radius}" Height="{Binding Radius}" Fill="{Binding Fill}"/>
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="{Binding Radius}" Canvas.ZIndex="1">
-                                <StackPanel Orientation="Vertical" VerticalAlignment="Center"  Width="{Binding Radius}"
-                            HorizontalAlignment="Center" Canvas.ZIndex="1">
-
-                                    <TextBlock x:Name="Activity" Text="{Binding Theme}" Width="{Binding TextblockWidth}" FontSize="{Binding FontSize}" HorizontalAlignment="Center" TextAlignment="Center" MaxLines="2" TextTrimming="WordEllipsis" LineStackingStrategy="MaxHeight" TextLineBounds="TrimToCapHeight" TextWrapping="WrapWholeWords"/>
-                                    <Grid HorizontalAlignment="Center">
-                                        <StackPanel Margin="0,5,0,5" Orientation="Horizontal" HorizontalAlignment="Center">
-                                            <TextBlock x:Name="MyDay" Text="{Binding Date}" FontSize="{Binding FontSize}" HorizontalAlignment="Center"/>
-                                            <TextBlock Text="天" FontSize="{Binding FontSize}" HorizontalAlignment="Center"/>
-                                        </StackPanel>
-                                    </Grid>
+                        <Grid Background="#FFB6D675" Width="300" Height="512">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center" >
+                                <TextBlock Text="{Binding Theme}"
+                                FontSize="40"  Margin="10,20,0,0" 
+                                MaxLines="1"
+                                TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                HorizontalAlignment="Left"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                    <TextBlock Text="{Binding Date}" 
+                                    FontSize="72" Margin="10,0,0,0" 
+                                  TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Bottom"/>
+                                    <TextBlock Text="天将到来" 
+                                  FontSize="24" Margin="10,0,0,12" 
+                                    TextTrimming="WordEllipsis" TextWrapping="Wrap" 
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Bottom"/>
                                 </StackPanel>
                             </StackPanel>
-                        </Canvas>
+                        </Grid>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Frame>
+                </GridView.ItemTemplate>
+            </GridView>
+            <Image HorizontalAlignment="Left" Height="110" Margin="63,28,0,0" VerticalAlignment="Top" Width="399" Source="Assets/Title.PNG" Grid.ColumnSpan="2"/>
+        </Grid>
     </Grid>
 
     <Page.BottomAppBar>
@@ -58,15 +105,14 @@
 
                 </Grid.ColumnDefinitions>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                    <AppBarButton Icon="Add" Label="添加" Click="Next_Click_1"/>
-                    <AppBarButton Icon="Edit"  Label="编辑" IsEnabled="False"/>
-                    <AppBarButton Icon="Save"  Label="保存" IsEnabled="False" />
-                    <AppBarButton Icon="Delete" Label="删除" IsEnabled="False"/>
+                    <AppBarButton Icon="Add" Label="添加" Click="newButton_Click"/>
+                    <AppBarButton Icon="Edit"  Label="编辑" Click="editButton_Click"/>
+                    <AppBarButton Icon="Delete" Label="删除" Click="deleteButton_Click" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <AppBarButton Icon="Back" Label="返回" IsEnabled="False" />
-                    <AppBarButton Icon="Forward" Label="下一页" Click="Next_Click_1"  />
-                    <AppBarButton Icon="Help" Label="帮助" IsEnabled="False" />
+                    <AppBarButton Icon="Forward" Label="下一页" Click="newButton_Click"  />
+                    <AppBarButton Icon="Help" Label="帮助" />
                 </StackPanel>
             </Grid>
 

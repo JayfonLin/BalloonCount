@@ -14,7 +14,10 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Balloon_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>BalloonCount_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>397AFCBB2CD23267ECD5FFE6DF155B8FA1AF046B</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -116,8 +119,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DisplayActivity.xaml.cs">
-      <DependentUpon>DisplayActivity.xaml</DependentUpon>
+    <Compile Include="DateCalculatePage.xaml.cs">
+      <DependentUpon>DateCalculatePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -127,6 +130,9 @@
     <Compile Include="Scenario1.xaml.cs">
       <DependentUpon>Scenario1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario2.xaml.cs">
+      <DependentUpon>Scenario2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
   </ItemGroup>
@@ -134,22 +140,31 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="BalloonCount_StoreKey.pfx" />
     <None Include="Balloon_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\buttonLogo.jpg" />
+    <Content Include="Assets\DateCalcute.PNG" />
+    <Content Include="Assets\Delete.PNG" />
+    <Content Include="Assets\Edit.PNG" />
     <Content Include="Assets\logo.jpg" />
-    <Content Include="Assets\Logo.scale-100.png" />
-    <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\Logo2424.png" />
+    <Content Include="Assets\New.PNG" />
+    <Content Include="Assets\SmallLogo.jpg" />
+    <Content Include="Assets\SplashScreen.scale-100.jpg" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Title.PNG" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DisplayActivity.xaml">
+    <Page Include="DateCalculatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,6 +173,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Scenario1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

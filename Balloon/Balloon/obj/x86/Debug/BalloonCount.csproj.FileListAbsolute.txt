@@ -1,0 +1,94 @@
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\App.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\DateCalculatePage.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\MainPage.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario1.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario2.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\Balloon.exe
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\Balloon.pdb
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\resources.pri
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\AppxManifest.xml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\bin\x86\Debug\BalloonCount.build.appxrecipe
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.g.i.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.g.i.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.g.i.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.g.i.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.xaml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.xaml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.xaml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.xaml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.xaml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.xbf
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Balloon.exe
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\Balloon.pdb
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\BalloonCount.csproj.GenerateResource.Cache
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\priconfig.xml
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\layout.resfiles
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\resources.resfiles
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\pri.resfiles
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\qualifiers.txt
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Lin\Documents\Tencent Files\598905067\FileRecv\BalloonCount\Balloon\Balloon\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.g.i.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.g.i.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.g.i.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.g.i.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.xaml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.xaml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.xaml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.xaml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.xaml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\App.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\DateCalculatePage.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\MainPage.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario1.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Scenario2.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Balloon.exe
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\Balloon.pdb
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\App.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\DateCalculatePage.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\MainPage.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario1.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Scenario2.xbf
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Balloon.exe
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\Balloon.pdb
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\resources.pri
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\AppxManifest.xml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Debug\BalloonCount.build.appxrecipe
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\BalloonCount.csproj.GenerateResource.Cache
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\priconfig.xml
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\layout.resfiles
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\resources.resfiles
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\pri.resfiles
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\qualifiers.txt
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\obj\x86\Debug\ProjectArchitectures.txt

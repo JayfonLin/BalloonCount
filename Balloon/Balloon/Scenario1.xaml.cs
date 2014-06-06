@@ -31,7 +31,7 @@ namespace Balloon
     public sealed partial class Scenario1 : Page
     {
         DataTransferManager dtm;
-        StorageFile photo;
+        //StorageFile photo;
         public Scenario1()
         {
             this.InitializeComponent();
@@ -68,7 +68,7 @@ namespace Balloon
             textSource += "内容：";
             textSource += source;
             data.SetText(textSource);
-            data.SetBitmap(RandomAccessStreamReference.CreateFromFile(photo));
+            //data.SetBitmap(RandomAccessStreamReference.CreateFromFile(photo));
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
@@ -88,37 +88,49 @@ namespace Balloon
             DataTransferManager.ShowShareUI();
         }
 
-        private async void OnCapturePhoto(object sender, RoutedEventArgs e)
-        {
-            var camera = new CameraCaptureUI();
-            var file = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
-            photo = file;
-            if (photo != null)
-            {
-                ImageSource imagesource = ImageFromFile(photo).Result;
-                MyPhoto.Source = imagesource;
-            }
-            CameraButton.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            MyPhoto.Visibility = Windows.UI.Xaml.Visibility.Visible;
-        }
+        //private async void OnCapturePhoto(object sender, RoutedEventArgs e)
+        //{
+        //    var camera = new CameraCaptureUI();
+        //    var file = await camera.CaptureFileAsync(CameraCaptureUIMode.Photo);
+            
+        //    if (file != null)
+        //    {
+        //        photo = file;
+        //        DataTransferManager.ShowShareUI();
+        //        BitmapImage bitmapImage = new BitmapImage();
+        //        FileRandomAccessStream stream = (FileRandomAccessStream)await photo.OpenAsync(FileAccessMode.Read);
+        //        await bitmapImage.SetSourceAsync(stream);
+        //        MyPhoto.Source = bitmapImage;
+        //        MyPhoto.Visibility = Windows.UI.Xaml.Visibility.Visible;
+        //    }
+
+        //}
 
         private void SureButton_Click(object sender, RoutedEventArgs e) {
-            if (Title.Text != string.Empty)
-            {
                 ActivityInfo activityInfo = new ActivityInfo();
                 activityInfo.Date = MyDate.Date.Date;
+
+                activityInfo.isTop = (bool)isTopSwitch.IsOn;
+                if (Title.Text == String.Empty) Title.Text = "某天";
                 activityInfo.Theme = Title.Text;
+                
                 activityInfo.Content = TextSource.Text;
                 //activityInfo.Picture = MyPhoto.
                 SQLiteConnection db = MySQLiteHelper.CreateSQLiteConnection();
+
+                //如果出现置顶，将其他置顶设为false
+                if ((bool)isTopSwitch.IsOn == true)
+                {
+                    List<object> query = db.Query(new TableMapping(typeof(ActivityInfo)), "select * from ActivityInfo");
+                    foreach (ActivityInfo mem in query)
+                    {
+                        mem.isTop = false;
+                        db.Update(mem);
+                    }
+                }
                 db.Insert(activityInfo);
                 db.Close();
                 Frame.Navigate(typeof(MainPage));
-            }
-            else
-            {
-                //TxtMessage.Text = "请输入国家名称及金牌总数";
-            }
         }
 
         

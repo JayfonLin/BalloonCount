@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JAYFON</Machine>
+    <WindowsUser>Lin</WindowsUser>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</PackageIdentityName>
+    <RegisteredManifestChecksum>C88B717E799BAEE447CC4B5CA74E40A9892B5F9E3A3066A80656B3B3CCB85E2B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_1.0.0.0_x86__n9crjymffsrjr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9_n9crjymffsrjr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a4d9925d-f20b-47f9-b6dc-0c351dc58cb9</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Lin</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-06T07:57:30.725</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\Balloon.exe">
+      <PackagePath>Balloon.exe</PackagePath>
+      <Modified>2014-06-06T09:21:48.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.4.3\Redist\Retail\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2014-05-16T08:51:40.446</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\buttonLogo.jpg">
+      <PackagePath>Assets\buttonLogo.jpg</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\logo.jpg">
+      <PackagePath>Assets\logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-06T07:56:24.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SmallLogo.jpg">
+      <PackagePath>Assets\SmallLogo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-06T07:56:27.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\SplashScreen.scale-100.jpg">
+      <PackagePath>Assets\SplashScreen.scale-100.jpg</PackagePath>
+      <Modified>2014-06-06T07:56:27.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\DateCalcute.PNG">
+      <PackagePath>Assets\DateCalcute.PNG</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Delete.PNG">
+      <PackagePath>Assets\Delete.PNG</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Edit.PNG">
+      <PackagePath>Assets\Edit.PNG</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-06T07:56:26.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Logo2424.png">
+      <PackagePath>Assets\Logo2424.png</PackagePath>
+      <Modified>2014-06-06T07:56:27.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\New.PNG">
+      <PackagePath>Assets\New.PNG</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-06T07:56:24.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\Assets\Title.PNG">
+      <PackagePath>Assets\Title.PNG</PackagePath>
+      <Modified>2014-05-29T11:27:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-06-06T07:57:28.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\DateCalculatePage.xbf">
+      <PackagePath>DateCalculatePage.xbf</PackagePath>
+      <Modified>2014-06-06T07:57:28.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-06-06T07:57:28.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\Scenario1.xbf">
+      <PackagePath>Scenario1.xbf</PackagePath>
+      <Modified>2014-06-06T07:57:28.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\Scenario2.xbf">
+      <PackagePath>Scenario2.xbf</PackagePath>
+      <Modified>2014-06-06T07:57:28.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lin\Documents\GitHub\BalloonCount\Balloon\Balloon\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-06-06T07:57:30.395</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -15,6 +15,8 @@ namespace Balloon
         [SQLite.AutoIncrement, SQLite.PrimaryKey]
         public int ID { set; get; }
 
+        public bool isTop { set; get; }
+
         private DateTime date;
         public DateTime Date {
             set {
@@ -67,6 +69,8 @@ namespace Balloon
                 return picture;
             }
         }
+
+
         //imagePath = new BitmapImage(new Uri("ms-appx:///" + "Assets/wallpaper-2650838.jpg"))
     }
 }
